@@ -3,6 +3,8 @@ A set of example aws config files for use with [awscli](https://aws.amazon.com/c
 
 Text that should be replaced are marked with ```[[YOUR-VARIABLE]]``` (e.g. ```[[YOUR-BUCKET-NAME]]```).
 
+You can also execute the `bucket.sh` file to have everything created with a single command. Be sure to inspect the file and update the used variables first.
+
 ## S3
 
 ### Simple S3 bucket
