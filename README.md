@@ -8,7 +8,7 @@ Text that should be replaced are marked with ```[[YOUR-VARIABLE]]``` (e.g. ```[[
 ### Simple S3 bucket
 - Replace my-cool-bucket with your desired bucket name
 ```
-aws s3api create-bucket --bucket my-cool-bucket --region eu-west-1
+aws s3api create-bucket --bucket my-cool-bucket --region eu-west-1 --acl private  --create-bucket-configuration LocationConstraint=eu-west-1
 ```
 
 ### Add public read policy
