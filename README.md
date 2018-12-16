@@ -37,7 +37,7 @@ curl https://raw.githubusercontent.com/tomfa/aws-policies/master/iam-bucket-writ
 sed 's/\[\[YOUR-BUCKET-NAME\]\]/my-cool-bucket/g' iam-template.json > iam.json
 aws iam create-user --user-name CoolBucketGuy
 aws iam create-policy --policy-name cool-bucket-write --policy-document file://iam.json
-aws iam attach-user-policy --usr-name CoolBucketGuy --policy-arn arn:aws:iam::938109129012:policy/cool-bucket-write 
+aws iam attach-user-policy --usre-name CoolBucketGuy --policy-arn arn:aws:iam::938109129012:policy/cool-bucket-write 
 aws iam create-access-key --user-name CoolBucketGuy
 ```
 
